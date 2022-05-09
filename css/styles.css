@@ -1,0 +1,381 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-text-second-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --background-second-color: #2f303a;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+/*шапка*/
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.list:hover .list:focus {
+  color: var(--accent-colorw);
+}
+
+/* WebStudio */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+.logo-accent {
+  color: var(--primary-text-second-color);
+}
+/* контакти */
+.studio:hover,
+.studio:focus {
+  color: var(--accent-color);
+}
+.studio {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+.portfo:hover,
+.portfo:focus {
+  color: var(--accent-color);
+}
+.portfo {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-second-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+.contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-second-color);
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+.telefon:hover,
+.telefon:focus {
+  color: var(--accent-color);
+}
+.telefon {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+/* секція для замовлення послуги */
+.section {
+  background: var(--background-second-color);
+}
+.section-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+.buttons {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 188% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/*особливості*/
+/*прихований заголовок*/
+.specifics {
+  color: var(--background-color);
+}
+/*прибрані кнопки*/
+.list-specifics {
+  list-style: none;
+}
+.list-work {
+  list-style: none;
+}
+
+/*заголовки*/
+
+.advantage {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-second-color);
+}
+/*абзац особливостей*/
+.description-advantage {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/*чим займаємося*/
+.work {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-second-color);
+}
+
+.work-img {
+  list-style: none;
+}
+
+/*команда*/
+.our-team {
+  background: #f5f4fa;
+}
+.card {
+  background: #ffffff;
+}
+.work-team {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-second-color);
+}
+.work-title {
+  list-style: none;
+}
+.name-team {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-second-color);
+}
+
+.work-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+footer {
+  background: var(--background-second-color);
+}
+.logo-footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+.logo-footer-white {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--background-color);
+}
+.list-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--background-color);
+  list-style: none;
+}
+
+.mail-footer:hover,
+.mail-footer:focus
+{
+  color: var(--accent-color);
+}
+.mail-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  
+
+  color: rgba(255, 255, 255, 0.6);;
+}
+.phone-footer:hover, 
+.phone-footer:focus {
+  color: var(--accent-color);
+}
+
+.phone-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ПОРТФОЛІО */
+.studio-porf:hover,
+.studio-porf:focus {
+  color: var(--accent-color);
+}
+.studio-porf {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-second-color);
+}
+.portfo-portfo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+.buttons-portfolio 
+.buttons-portfolio:hover,
+.buttons-portfolio:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.buttons-portfolio {
+  color: var(--primary-text-second-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+  
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+
+.services {
+  color: var(--background-color);
+}
+.list-services {
+  list-style: none;
+}
+.name-services {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-second-color);
+}
