@@ -7,12 +7,38 @@
 }
 
 body {
+align-items: center;
+
   font-family: Roboto;
   font-size: 14px;
   color: var(--primary-text-color);
 }
 /*шапка*/
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.information-nav {
+  display: flex;
+}
+.information-li {
+  margin-right: 50px;
+}
+.information-li:last-child {
+  margin-right: 0;
+}
 .link {
   text-decoration: none;
 }
@@ -26,6 +52,9 @@ body {
 
 /* WebStudio */
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -46,6 +75,10 @@ body {
   color: var(--accent-color);
 }
 .studio {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -60,6 +93,10 @@ body {
   color: var(--accent-color);
 }
 .portfo {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -72,6 +109,10 @@ body {
   color: var(--accent-color);
 }
 .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -84,7 +125,17 @@ body {
 .mail:focus {
   color: var(--accent-color);
 }
+.mail-tel {
+  margin: auto;
+  display: flex;
+  border: box;
+}
+
 .mail {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -98,6 +149,10 @@ body {
   color: var(--accent-color);
 }
 .telefon {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -108,21 +163,39 @@ body {
 }
 /* секція для замовлення послуги */
 .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: auto;
+}
+.section-div {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-n {
   background: var(--background-second-color);
 }
 .section-title {
+  margin: 0 auto;
+  max-width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   /* or 136% */
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
 }
 .buttons {
+  border: none;
+  margin-bottom: 200px;
+  margin: auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -140,8 +213,28 @@ body {
 }
 /*особливості*/
 /*прихований заголовок*/
+.container-specifics {
+  display: flex;
+  align-items: center;
+}
+.box-specifics {
+  margin-left: 30px;
+}
+.box-specifics :last-child {
+  margin-right: 0;
+}
 .specifics {
   color: var(--background-color);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*прибрані кнопки*/
 .list-specifics {
@@ -154,6 +247,9 @@ body {
 /*заголовки*/
 
 .advantage {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -165,6 +261,9 @@ body {
 }
 /*абзац особливостей*/
 .description-advantage {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -177,6 +276,9 @@ body {
 }
 /*чим займаємося*/
 .work {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 36px;
@@ -187,9 +289,16 @@ body {
 }
 
 .work-img {
+  display: flex;
+  align-items: center;
   list-style: none;
 }
-
+.work-img-li {
+  margin-right: 30px;
+}
+.work-img-li :last-child {
+  margin-right: 0;
+}
 /*команда*/
 .our-team {
   background: #f5f4fa;
@@ -198,6 +307,9 @@ body {
   background: #ffffff;
 }
 .work-team {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -281,8 +393,7 @@ footer {
 }
 
 .mail-footer:hover,
-.mail-footer:focus
-{
+.mail-footer:focus {
   color: var(--accent-color);
 }
 .mail-footer {
@@ -293,11 +404,9 @@ footer {
   line-height: 1.71;
   /* or 171% */
 
-  
-
-  color: rgba(255, 255, 255, 0.6);;
+  color: rgba(255, 255, 255, 0.6);
 }
-.phone-footer:hover, 
+.phone-footer:hover,
 .phone-footer:focus {
   color: var(--accent-color);
 }
@@ -340,13 +449,14 @@ footer {
 
   color: var(--accent-color);
 }
-.buttons-portfolio 
-.buttons-portfolio:hover,
+.buttons-portfolio .buttons-portfolio:hover,
 .buttons-portfolio:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
 .buttons-portfolio {
+  border: none;
+
   color: var(--primary-text-second-color);
   background: #f5f4fa;
   border-radius: 4px;
@@ -356,10 +466,10 @@ footer {
   font-size: 16px;
   line-height: 1.63;
   /* identical to box height, or 162% */
-  
+
   text-align: center;
   letter-spacing: 0.03em;
-  }
+}
 
 .services {
   color: var(--background-color);
