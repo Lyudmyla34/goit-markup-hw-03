@@ -26,8 +26,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: pink;
-}
+  }
 
 .header-container {
   display: flex;
@@ -547,10 +546,20 @@ footer {
 .services {
   color: var(--background-color);
 }
-.list .buttons-ul {
+.buttons-ul {
   display: flex;
-  flex: center;
+  justify-content: center;
+  margin-bottom: 56px;
 }
+
+.buttons-li {
+  margin-right: 8px;
+}
+
+.buttons-li:last-child {
+  margin-right: 0;
+}
+
 .list-services {
   display: flex;
   flex-wrap: wrap;
