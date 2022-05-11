@@ -26,7 +26,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  }
+}
 
 .header-container {
   display: flex;
@@ -130,6 +130,9 @@ body {
 .mail:hover,
 .mail:focus {
   color: var(--accent-color);
+}
+.mail-tel {
+  display: block;
 }
 .mail-tel {
   margin: auto;
