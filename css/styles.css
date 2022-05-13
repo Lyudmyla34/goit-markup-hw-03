@@ -254,12 +254,15 @@ body {
 .container-specifics {
   display: flex;
   align-items: center;
+  margin: 0px 0px;
 }
-
+.list-specifics.container-specifics {
+  padding: 0;
+}
 .box-specifics {
-  margin-left: 30px;
+  margin-right: 30px;
 }
-.box-specifics :last-child {
+.box-specifics:last-child {
   margin-right: 0;
 }
 .specifics {
@@ -302,6 +305,7 @@ body {
 .description-advantage {
   margin-top: 0;
   margin-bottom: 0;
+  width: 270px;
 
   font-family: inherit;
   font-weight: 400;
@@ -337,14 +341,17 @@ body {
   list-style: none;
 }
 .work-img-li {
+  padding: 0;
+  margin: 0px 30px 0px 0px;
+}
+.work-img-li:last-child {
+  margin-right: 0;
+}
+
+.work-img-foto {
   max-width: 100%;
   height: auto;
   display: block;
-  padding: 0;
-  margin-top: 0;
-  margin-right: 30px;
-  margin-bottom: 0;
-  margin-left: 0;
 }
 
 /*команда*/
@@ -377,8 +384,13 @@ body {
   margin: 0;
   list-style: none;
 }
+.work-title-card {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .name-team {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-family: "Roboto";
@@ -393,7 +405,7 @@ body {
 
   color: var(--primary-text-second-color);
 }
-.card :last-child {
+.card:last-child {
   margin-right: 0;
 }
 .card {
@@ -403,9 +415,7 @@ body {
 }
 
 .work-name {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  margin: 0;
 
   font-family: "Roboto";
   font-style: normal;
@@ -423,6 +433,10 @@ body {
   display: block;
   height: auto;
   max-width: 100%;
+}
+.work-name-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 footer {
   padding-top: 60px;
@@ -630,11 +644,9 @@ footer {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 20px 24px 20px 24px;
 }
+
 .name-services {
   margin-top: 0;
   margin-bottom: 4px;
